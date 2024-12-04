@@ -1,0 +1,27 @@
+.headerView {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #001529;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure table is not overflowing the screen on smaller devices */
+.ant-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Ensure the whole layout is responsive */
+@media (max-width: 768px) {
+  .ant-tabs {
+    font-size: 14px;
+    /* Adjust tab font size for small screens */
+  }
+
+  .ant-layout {
+    padding: 10px;
+    /* Add small padding to the layout */
+  }
+}

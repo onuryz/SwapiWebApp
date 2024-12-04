@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "6970:6970"
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "6969:6969"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

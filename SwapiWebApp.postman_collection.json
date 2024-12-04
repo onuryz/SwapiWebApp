@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "24cd1234-1356-4f30-92e4-9f557cb598d5",
+		"name": "SwapiWebApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1878928"
+	},
+	"item": [
+		{
+			"name": "People",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6970/people/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6970",
+					"path": [
+						"people",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1",
+							"description": "Integer",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "15",
+							"description": "Integer",
+							"disabled": true
+						},
+						{
+							"key": "sort",
+							"value": "name",
+							"description": "name|height|mass|hairColor|skinColor|eyeColor|birthYear|gender|created|edited",
+							"disabled": true
+						},
+						{
+							"key": "order",
+							"value": "asc",
+							"description": "asc|desc",
+							"disabled": true
+						},
+						{
+							"key": "filterField",
+							"value": "name",
+							"description": "name|height|mass|hairColor|skinColor|eyeColor|birthYear|gender|created|edited",
+							"disabled": true
+						},
+						{
+							"key": "filterValue",
+							"value": "sky",
+							"description": "String",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Planets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6970/planets/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6970",
+					"path": [
+						"planets",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1",
+							"description": "Integer",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "15",
+							"description": "Integer",
+							"disabled": true
+						},
+						{
+							"key": "sort",
+							"value": "name",
+							"description": "name|rotationPeriod|orbitalPeriod|diameter|climate|gravity|terrain|surfaceWater|population|created|edited",
+							"disabled": true
+						},
+						{
+							"key": "order",
+							"value": "asc",
+							"description": "asc|desc",
+							"disabled": true
+						},
+						{
+							"key": "filterField",
+							"value": "name",
+							"description": "name|rotationPeriod|orbitalPeriod|diameter|climate|gravity|terrain|surfaceWater|population|created|edited",
+							"disabled": true
+						},
+						{
+							"key": "filterValue",
+							"value": "coruscant",
+							"description": "String",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
